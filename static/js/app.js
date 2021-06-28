@@ -174,6 +174,8 @@ var bubbleData = [
             yaxis: { visible: false, range: [-1, 1] }
             };
             
+            Plotly.newPlot("gauge", gaugedata, gaugeLayout);
             
+              
                          
 });
