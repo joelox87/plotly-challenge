@@ -169,6 +169,11 @@ var bubbleData = [
                }
              }
             ],
+            title: "Belly Botton Washing Frequency per Week",
+            xaxis: { visible: false, range: [-1, 1] },
+            yaxis: { visible: false, range: [-1, 1] }
+            };
+            
             
                          
 });
