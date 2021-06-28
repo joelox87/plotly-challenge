@@ -179,6 +179,13 @@ var bubbleData = [
     // optionChanged function setup
     d3.select("#selDataset").on("change", optionChanged);
             
-                 
+    function optionChanged() {
+        console.log("Different item was selected.");
+        var dropdownMenu = d3.select("#selDataset");
+        var dropdownValue = dropdownMenu.property("value");
+        console.log(`Currently test id ${dropdownValue} is shown on the page`);
+       
+        createPlotly(data);
+        }                             
                          
 });
