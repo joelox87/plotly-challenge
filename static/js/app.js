@@ -80,6 +80,31 @@ var bubbleData = [
     };
     
     Plotly.newPlot("bubble", bubbleData, bubbleLabels);
+
+    // Gauge chart and pointer setup
+    var degrees = 10 - data.metadata[index].wfreq,
+    radius = 0.6;
+    var radians = (degrees * Math.PI) / 10;
+    var aX = 0.025 * Math.cos((degrees - 5 * Math.PI) / 10);
+    var aY = 0.025 * Math.sin(((degrees - 5) * Math.PI) / 10);
+    var bX = -0.025 * Math.cos(((degrees - 5) * Math.PI) / 10);
+    var bY = -0.025 * Math.sin(((degrees - 5) * Math.PI) / 10);
+    var cX = radius * Math.cos(radians);
+    var cY = radius * Math.sin(radians);
     
+    var path =
+    "M " + aX + " " + aY + " L " + bX + " " + bY + " L " + cX + " " + cY + " Z";
+    
+    var gaugedata = [
+    {
+     type: "scatter",
+     x: [0],
+     y: [0],
+     marker: { size: 14, color: "850000" },
+     showlegend: false,
+     name: "Wash per Week",
+     text: data.metadata[index].wfreq,
+     hoverinfo: "text+name"
+    },
     
 });
