@@ -186,6 +186,5 @@ var bubbleData = [
         console.log(`Currently test id ${dropdownValue} is shown on the page`);
        
         createPlotly(data);
-        }                             
-                         
+        }                                                      
 });
