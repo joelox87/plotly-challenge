@@ -176,6 +176,9 @@ var bubbleData = [
             
             Plotly.newPlot("gauge", gaugedata, gaugeLayout);
             
-              
+    // optionChanged function setup
+    d3.select("#selDataset").on("change", optionChanged);
+            
+                 
                          
 });
