@@ -158,6 +158,17 @@ var bubbleData = [
          }
          ];
          
-         
+         var gaugeLayout = {
+            shapes: [
+             {
+               type: "path",
+               path: path,
+               fillcolor: "850000",
+               line: {
+                 color: "850000"
+               }
+             }
+            ],
+            
                          
 });
