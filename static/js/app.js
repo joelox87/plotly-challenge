@@ -14,4 +14,10 @@ d3.json("samples.json").then(function createPlotly(data) {
    return `<option>${d}</option`;
  });
  
- 
+// Read index from selected option from dropdown menu
+var dropdownMenu = d3.select("#selDataset");
+var dropdownValue = dropdownMenu.property("value");
+var index = testid.indexOf(dropdownValue);
+
+
+});
