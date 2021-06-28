@@ -106,5 +106,18 @@ var bubbleData = [
      text: data.metadata[index].wfreq,
      hoverinfo: "text+name"
     },
-    
+    {
+        values: [
+          50 / 9,
+          50 / 9,
+          50 / 9,
+          50 / 9,
+          50 / 9,
+          50 / 9,
+          50 / 9,
+          50 / 9,
+          50 / 9,
+          50
+        ],
+        
 });
